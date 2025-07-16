@@ -79,7 +79,7 @@
         background-color: rgb(220, 247, 247);
         text-align: center;
         width: 100%;
-        height: 550px;
+        height: 700px;
         border-radius: 10px;
         
     }
@@ -94,16 +94,25 @@
         color: #333;
     
     }
-  
-  
-   
- .earth-1 h3{
-        color: #004d66;
+    .crust    { background-color: #dcedc8; }
+    .mantle   { background-color: #ffe082; }
+    .outer-core { background-color: #ffccbc; }
+    .inner-core { background-color: #ef9a9a; }
+    
+    .layers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      gap: 20px;
     }
-    .earth-1:hover{
-         box-shadow: 0 8px 16px rgba(0, 77, 102, 0.2);
 
+    #structure{
+        display: flex;
+        gap: 15px;
     }
+  
+  
   
 
     h1 {
@@ -186,28 +195,28 @@
           <br>
                 <h2> Structure of the Earth</h2>
                 <p>Earth is made of four main layers — each one deeper, hotter, and more intense than the last. These layers explain everything from earthquakes to volcanoes to magnetic fields.</p>
-                
-                <div id="earth">
-                    <div class="earth-1" >
-                        <h3>🌎 Crust</h3>
-                        <p>The solid, outermost layer where we live. It's thin but essential.</p>
-                    </div>
-                    <div class="earth-1">
-                        <h3>🪨 Mantle</h3>
-                        <p>Beneath the crust lies molten rock that slowly flows, driving plate tectonics.</p>
-                    </div>
-                    <div class="earth-1">
-                        <h3>🔥 Outer Core</h3>
-                        <p>Liquid metal layer responsible for Earth’s magnetic field.</p>
-                    </div>
-                    <div class="earth-1">
-                        <h3>⚙️ Inner Core</h3>
-                        <p>The solid, extremely hot center made of iron and nickel.</p>
-                    </div>
-                </div>
+        <section class="layers">
+            <div id="structure">
+    <div class=" crust" style="display: flex;align-items: center;flex-direction: column;padding: 10px;">
+      <h2>🌍 Crust</h2>
+      <p>The Earth's outermost layer, made of solid rock. It's where we live.</p>
+    </div>
+    <div class=" mantle" style="display: flex;align-items: center;flex-direction: column;padding: 10px;">
+      <h2>🔥 Mantle</h2>
+      <p>The thickest layer made of semi-solid rock that moves slowly.</p>
+    </div>
+    <div class=" outer-core" style="display: flex;align-items: center;flex-direction: column;padding: 10px;">
+      <h2>💦 Outer Core</h2>
+      <p>A liquid layer of molten metals like iron and nickel.</p>
+    </div>
+    <div class="inner-core" style="display: flex;align-items: center;flex-direction: column;padding: 10px;">
+      <h2>🌑 Inner Core</h2>
+      <p>The solid center of the Earth, extremely hot and dense.</p>
+    </div>
+    </div>
+  </section>
 
-
-     </div>          
+     </div>          <br><br><br>
        
 
 
