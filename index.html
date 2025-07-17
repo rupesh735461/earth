@@ -1,23 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE EARTH</title>
-</head>
-<style>
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    #header{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: rgb(140, 245, 147);
-    }
-    a{
+<html>
+    <head>
+
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            background-color: rgb(121, 245, 121);
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #pages{
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+        }
+            a{
         text-decoration: none;
         font-size: 22px;
     }
@@ -25,12 +28,17 @@
         color: darkslateblue;
         font-weight: bold;
     }
-    #first{
+    .first{
+        width: 100%;
         background-image: url('https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-P-712091-638242258287458398.PNG');
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+
 
     }
     .discovery {
@@ -73,14 +81,14 @@
         color: #006644;
         }
 
-
-
+        
     #structure-of-earth{
         background-color: rgb(220, 247, 247);
         text-align: center;
         width: 100%;
-        height: 700px;
+        height: 500px;
         border-radius: 10px;
+        padding: 15px;
         
     }
     
@@ -94,24 +102,19 @@
         color: #333;
     
     }
-    .crust    { background-color: #dcedc8; }
-    .mantle   { background-color: #ffe082; }
-    .outer-core { background-color: #ffccbc; }
-    .inner-core { background-color: #ef9a9a; }
-   
+  
 
     #structure{
-        width: 95%;
+           width: 95%;
             border-radius: 15px;
             background-color: rgba(255, 255, 255, 0.541);
             padding: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
+            line-height: 35px;
     }
-  
-  
-  
+      
 
     h1 {
   color: #2a4d69;
@@ -142,14 +145,19 @@
   background-color: #d9f3f9;
 }
 
-</style>
-<body>
+  
+  
 
+    </style>
+    <body>
+        
          <header>
         <div id="header">
+            <div>
             <img src="earth-removebg.png" height="80">
+            </div>
 
-           <div style="display: flex;align-items: center; column-gap: 10px;">
+           <div id="pages" >
              <a href="#">HOME</a>||
             <a href="About.html">ABOUT</a>||
             <a href="#">CONTACT</a>
@@ -158,11 +166,10 @@
         
     </header>
 
-<section >
- 
+    <section>
         
-        <div id="first"><br><br>
-                <div class="discovery">
+        <div class="first"><br><br>
+               <div class="discovery">
                       <h2>🌍 The Discovery & Understanding of Earth</h2>
                         <p>
                      Unlike continents or planets discovered through exploration, Earth has always been humanity’s home. What changed over time was <strong>how we understood it</strong> — its shape, place in the universe, and life-sustaining power.
@@ -185,14 +192,15 @@
                         </p>
 
                         <blockquote>“Look again at that dot. That’s here. That’s home. That’s us.” – <em>Carl Sagan</em></blockquote><br><br>
-                </div><br><br><br>
+              </div><br><br><br>
 
         </div>
- 
-  <!--   <div id="structure-of-earth">
-          <br>
-                <h2> Structure of the Earth</h2>
-                <p>Earth is made of four main layers — each one deeper, hotter, and more intense than the last. These layers explain everything from earthquakes to volcanoes to magnetic fields.</p>
+
+
+        <div id="structure-of-earth">
+          <br><br><br><br>
+                <h2> Structure of the Earth</h2><br>
+                <p>Earth is made of four main layers — each one deeper, hotter, and more intense than the last. These layers explain everything from earthquakes to volcanoes to magnetic fields.</p><br><br><br>
         <section class="layers">
         <div id="structure">
     <div class=" crust" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -212,11 +220,11 @@
       <p  width="65%">The solid center of the Earth, extremely hot and dense.</p>
     </div>
     </div>
-  </section>
--->
-     </div>          <br><br><br>
-       
+    </div>
 
+
+
+    
 
          <div id="third" style="display: flex;flex-direction: column;">
             <h1>Explore the Earth</h1>
@@ -230,7 +238,6 @@
            
 
          </div>
-       <br><br><br>
- 
-</body>
+    </section><br><br><br>
+    </body>
 </html>
